@@ -5,7 +5,8 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 const FILENAME = "accountInfo.json";
-const __dirname = import.meta.url.split("/scripts")[0].split("file://")[1];
+// const __dirname = import.meta.url.split("/scripts")[0].split("file://")[1];
+const __dirname = "C:\\projects\\creating-smart-contract-and-sending-userops"; // windows path
 
 async function main() {
   const signer = await createSigner();
